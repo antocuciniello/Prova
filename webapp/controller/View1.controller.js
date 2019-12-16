@@ -3,7 +3,7 @@ sap.ui.define([
 ], function (Controller) {
 	"use strict";
 	//prova
-	//prova 2 www
+	//prova 2aaa
 	return Controller.extend("barilla.barilla.controller.View1", {
 		onInit: function () {
 
