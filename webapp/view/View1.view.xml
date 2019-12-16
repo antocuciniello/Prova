@@ -1,0 +1,52 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="barilla.barilla.controller.View1" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<!--	<Table xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" noDataText="Drop column list items here and columns in the area above{Category}{Impianto}{Location}{Residuo}" id="table0" cd:w5g.dt.context="/Zbarilla">
+						-->
+						<Table xmlns:cd="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1" noDataText="Errore collegamento al DB" id="table0" items="{/Zbarilla}">
+							<items>
+								<ColumnListItem type="Active" id="item0">
+									<cells>
+										<Text text="{Category}" id="text2"/>
+										<Text text="{Impianto}" id="text3"/>
+										<Text text="{Location}" id="text4"/>
+										<Text text="{Residuo}" id="text23"/>
+										<!--prova GIT -->
+									</cells>
+								</ColumnListItem>
+							</items>
+							<columns>
+								<Column id="column0">
+									<header>
+										<Label text="Category" id="label0"/>
+									</header>
+								</Column>
+								<Column id="column1">
+									<header>
+										<Label text="Impianto" id="label1"/>
+									</header>
+								</Column>
+								<Column id="column2">
+									<header>
+										<Label text="Location" id="label2"/>
+									</header>
+								</Column>
+								<Column id="column0_1575553992269">
+									<header>
+										<Text text="Residuo" id="text3_1575553992269"/>
+									</header>
+								</Column>
+							</columns>
+						</Table>
+						<ActionSelect id="select0"/>
+						<ActionSelect id="select1"/>
+						<SearchField xmlns="sap.m" placeholder="Search for ..." id="pippo"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

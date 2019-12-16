@@ -1,0 +1,11 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx" Version="1.0">
+	<edmx:DataServices xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" m:DataServiceVersion="2.0">
+		<Schema xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+			xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2008/09/edm"
+			Namespace="anto">
+			<EntityType Name="ZbarillaType">
+				<Key><PropertyRef Name="Location"/><PropertyRef Name="Category"/></Key><Property Name="Location" Type="Edm.String" Nullable="false" MaxLength="40"/><Property Name="Category" Type="Edm.String" Nullable="false" MaxLength="40"/><Property Name="Impianto" Type="Edm.Double"/><Property Name="Residuo" Type="Edm.String" MaxLength="1"/></EntityType>
+			<EntityContainer Name="barilla_service" m:IsDefaultEntityContainer="true"><EntitySet Name="Zbarilla" EntityType="anto.ZbarillaType"/></EntityContainer>
+		</Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
